@@ -9,7 +9,7 @@ class User extends REST_Controller {
 
         header('Access-Control-Allow-Origin: *');
         header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
-        header("Access-Control-Allow-Headers: 'origin, x-requested-with, content-type");
+        header("Access-Control-Allow-Headers: 'origin, x-requested-with, Content-type");
         
         parent::__construct();
         //Load user model
