@@ -9,7 +9,7 @@ use the the original from https://github.com/bcit-ci/CodeIgniter or download it 
 website https://codeigniter.com/download
 
 *******************
-DashBoard
+Demo
 *******************
 
 This Backend app contains an operative DashBoard Demo in http://jagh1987.000webhostapp.com/DashBoard
