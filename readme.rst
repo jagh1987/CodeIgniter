@@ -60,7 +60,7 @@ How to download and implement?
     $config['base_url'] = 'http://localhost/NAME_OF_YOUR_FOLDER/';
 4) Create a new MySQL Database
 
-```
+```javascript
 CREATE DATABASE codeigniterDB;
 use codeigniterDB;
 
