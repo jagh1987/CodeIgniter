@@ -60,8 +60,9 @@ How to download and implement?
     $config['base_url'] = 'http://localhost/NAME_OF_YOUR_FOLDER/';
 4) Create a new MySQL Database
 
-```javascript
+
 CREATE DATABASE codeigniterDB;
+
 use codeigniterDB;
 
 CREATE TABLE `user` (
@@ -82,6 +83,5 @@ CREATE TABLE `answer` (
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 CREATE TRIGGER userDeleted BEFORE DELETE ON user FOR EACH ROW DELETE FROM answer WHERE answer.userid = OLD.id;
-```
 
 5) Edit the application/config/database.php with the mysql database credencials hostname, database, user, password
