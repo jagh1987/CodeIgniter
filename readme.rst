@@ -2,9 +2,9 @@
 Backend App CodeIgniter Implementation
 ###################
 
-First than all, this is an application for learning purposes. Knowing That... now:
+First than all, this is an application for *learning purposes*. Knowing That... now:
 
-This is a code igniter app implementation, please DON'T USE THIS for your developing purposes, 
+This is a code igniter app implementation, please **DON'T USE THIS** for your developing purposes, 
 use the the original from https://github.com/bcit-ci/CodeIgniter or download it from the original 
 website https://codeigniter.com/download
 
@@ -12,12 +12,12 @@ website https://codeigniter.com/download
 Demo
 *******************
 
-This Backend app contains an operative [DashBoard Demo](http://jagh1987.000webhostapp.com/DashBoard)
+This Backend app contains an operative DashBoard Demo in http://jagh1987.000webhostapp.com/DashBoard
 The application allow to register user, and after that user can answer son easy questions. The purpose issues
 to fill that questions, and the app will save the user questions, after that the application allow to see
-a list of users in the [DashBoard Demo](http://jagh1987.000webhostapp.com/DashBoard) and can see a list
+a list of users in the DashBoard Demo in http://jagh1987.000webhostapp.com/DashBoard and can see a list
 of registered users, and see the answers that has given.
-
+[link to Google!](http://google.com)
 **************************
 API User
 **************************
@@ -60,7 +60,7 @@ How to download and implement?
     $config['base_url'] = 'http://localhost/NAME_OF_FOLDER/';
 4) Create a new MySQL Database
 
-```MySQL
+```sql
 CREATE DATABASE codeigniterDB;
 use codeigniterDB;
 
