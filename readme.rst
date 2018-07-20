@@ -57,10 +57,10 @@ How to download and implement?
 2) Download the repositore and set it up into a local ampp, xamp, lamp or wampserver, etc.
 3) Save the repositore into a folder inside your public apache www folder the name of the folder must be the same in
     application/config/config.php file, modify the base_url in this file, acording your apache folder name
-    $config['base_url'] = 'http://localhost/NAME_OF_FOLDER/';
+    $config['base_url'] = 'http://localhost/NAME_OF_YOUR_FOLDER/';
 4) Create a new MySQL Database
 
-```sql
+```
 CREATE DATABASE codeigniterDB;
 use codeigniterDB;
 
