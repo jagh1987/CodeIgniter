@@ -7,7 +7,7 @@ class Answer_model extends CI_Model{
         $this->load->database();
     }
     /**
-     * Add new User to db
+     * Add new Answer to db
      */
     function addAnswer($userid,$qNumber, $response){
 
@@ -42,7 +42,7 @@ class Answer_model extends CI_Model{
         $this->db->update('answer', $datos);
     }
     /**
-     * Delete User from db
+     * Delete Answer from db
      */
     function deleteAnswer($id){
 
@@ -82,10 +82,23 @@ class Answer_model extends CI_Model{
         }
     }
     /**
-     * Get User list
+     * Get Answer list
      */
     function getAnswers(){
         $this->db->order_by("userid asc,questionNumber asc");
+        $query= $this->db->get('answer');
+        if($query->num_rows()>0) return 
+            $query;
+        else
+            false;
+    }
+    
+    /**
+     * Get Answer list from specific user id
+     */
+    function getAnswerOfUser($userid){
+        $this->db->order_by("questionNumber asc");
+        $this->db->where("(userid='".$userid."')", NULL, FALSE);
         $query= $this->db->get('answer');
         if($query->num_rows()>0) return 
             $query;

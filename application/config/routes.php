@@ -68,6 +68,10 @@ $route["answer"]["post"]= 'answer/index_post';                  //Insert
 $route["answer/(:num)"]["put"]= 'answer/index_put/$1';          //update
 $route["answer/(:num)"]["delete"]= 'answer/index_delete/$1';    //delete
 
+$route['useranswers']['get'] = 'useranswers/index_get';                   //Basic
+$route['useranswers/(:num)']['get'] = 'useranswers/find/$1';         //Select
+$route['useranswers/(:num)/(:num)']['get'] = 'useranswers/find2/$1/$2';         //Select
+
 /*
 | -------------------------------------------------------------------------
 | Sample REST API Routes
